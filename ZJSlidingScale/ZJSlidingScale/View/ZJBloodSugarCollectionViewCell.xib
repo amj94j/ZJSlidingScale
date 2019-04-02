@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ZJBloodSugarCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="147" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="147" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tBd-ZQ-26D">
+                        <rect key="frame" x="123" y="1" width="24" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.33333334329999997" green="0.33333334329999997" blue="0.33333334329999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kfZ-Jf-iEq">
+                        <rect key="frame" x="0.0" y="1" width="24" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.33333334329999997" green="0.33333334329999997" blue="0.33333334329999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e3k-3l-VYa">
+                        <rect key="frame" x="61.5" y="1" width="24" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.33333334329999997" green="0.33333334329999997" blue="0.33333334329999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="SEy-5g-ep8" firstAttribute="bottom" secondItem="tBd-ZQ-26D" secondAttribute="bottom" id="4Vs-qG-Qdr"/>
+                <constraint firstItem="SEy-5g-ep8" firstAttribute="bottom" secondItem="kfZ-Jf-iEq" secondAttribute="bottom" id="5gZ-YQ-o7b"/>
+                <constraint firstItem="SEy-5g-ep8" firstAttribute="bottom" secondItem="e3k-3l-VYa" secondAttribute="bottom" id="622-pl-heS"/>
+                <constraint firstItem="SEy-5g-ep8" firstAttribute="trailing" secondItem="tBd-ZQ-26D" secondAttribute="trailing" id="OBh-W2-7oB"/>
+                <constraint firstItem="e3k-3l-VYa" firstAttribute="centerX" secondItem="SEy-5g-ep8" secondAttribute="centerX" id="U7f-s9-5ig"/>
+                <constraint firstItem="tBd-ZQ-26D" firstAttribute="width" secondItem="kfZ-Jf-iEq" secondAttribute="width" id="Y2f-xv-GvR"/>
+                <constraint firstItem="e3k-3l-VYa" firstAttribute="width" secondItem="kfZ-Jf-iEq" secondAttribute="width" id="bjs-Tn-bMK"/>
+                <constraint firstItem="tBd-ZQ-26D" firstAttribute="height" secondItem="kfZ-Jf-iEq" secondAttribute="height" id="esg-xF-NZt"/>
+                <constraint firstItem="e3k-3l-VYa" firstAttribute="height" secondItem="kfZ-Jf-iEq" secondAttribute="height" id="fbl-V5-JOc"/>
+                <constraint firstItem="SEy-5g-ep8" firstAttribute="leading" secondItem="kfZ-Jf-iEq" secondAttribute="leading" id="iLb-cW-CjJ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <size key="customSize" width="147" height="50"/>
+            <connections>
+                <outlet property="maxLabel" destination="tBd-ZQ-26D" id="j6v-8g-GoI"/>
+                <outlet property="middleLabel" destination="e3k-3l-VYa" id="Pzr-3D-D1e"/>
+                <outlet property="minLabel" destination="kfZ-Jf-iEq" id="uYb-lF-QiW"/>
+            </connections>
+            <point key="canvasLocation" x="38.405797101449281" y="34.821428571428569"/>
+        </collectionViewCell>
+    </objects>
+</document>
